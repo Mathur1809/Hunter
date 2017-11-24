@@ -1,0 +1,150 @@
+<!DOCType HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+	div.wrap {
+    width: 90%;
+    position: relative;
+}
+
+.wrap img#left{
+	left: 0;
+}
+
+.wrap img#right{
+	right: 0;
+}
+
+.news{
+	border-style: solid;
+	border-color: #67c239;
+	background-color: #600080;
+	color: #67c239;
+	text-align: center;
+}
+
+</style>
+<title> Hunter's View </title>
+</head>
+<body style = "background-image:url('Backgrounds/1.png');padding-left: 5%;padding-right:5%">
+<div style = "background-image:url('Backgrounds/2.jpg');padding-left: 5%;padding-right: 5%" class = "wrap" >
+<br/>
+<table style="width: 75%;" cellspacing="0" cellpadding="0" align = "center">
+	<tr>
+		<td style="background-color: #600080;width: 25%;text-align: center">
+			<img src="HLogo.png" style="width: 200px;height: 200px;">
+		</td>
+		<td style="background-color: #67c239;text-align: center;">
+			<h1 style="color: #600080;font-size: 70px;text-shadow: 2px 2px 30px;font-style: oblique;"> Hunter's View </h1>
+		</td>
+	</tr>
+</table>
+<p align = "center" style = "color: #67c239;background-color: #600080;font-size: 30px"> Welcome to Hunter's View. Here are some news snippets from the Premier League. </p>
+<!--<div style="width: 50%;left: 25%;position: absolute;background-image: url('whiteback.png');word-wrap: break-word;" align="center" id = "news">-->
+<script type = "text/javascript">
+var a = 0;
+var b = 0;
+var c = 0;
+var d = 0;
+var e = 0;
+news = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+snippet = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+news[0] = 'Carabao Cup in ANOTHER draw farce: Quarter-final picks delayed by TWO HOURS after "technical glitch" at Twitter has fans fuming'
+news[1] = "'This is the worst injury I have ever known': Wenger shocked by Cazorla's achilles nightmare but is confident Spaniard will still return in January"
+news[2] = "Ian Wright reveals how he was bullied at Crystal Palace - including being 'kung-fu kicked by his captain'"
+news[3] = "Kendall resigns as England Women's coach - but FA take NO ACTION over claims he spoke to Aluko in mock Caribbean accent"
+news[4] = "Griezmann is having his worst season at Atletico Madrid just as they need him most... is it because he's off to Barcelona or Manchester United?"
+news[5] = "REVEALED: England's blueprint for World Cup... with Dier in defence, flying wing-backs and Alli paired with Kane" 
+news[6] = "Peru bag final ticket to the World Cup to spark incredible scenes after ending their long wait since 1982 by beating New Zealand in play-off"
+news[7] = "World Cup draw gig in Moscow handed to FIFA critic Lineker"
+news[8] = "Messi for LIFE: Barcelona have 'already renewed contract until 2021'... and are now working on lifetime deal"
+news[9] = "United, Chelsea and Co beware! Pep is ready to extend Man City contract with talks expected to start in the summer"
+news[10] = "Liverpool stars past and present attend Dalglish premiere as Kop legend sees incredible career immortalised in biopic film"
+news[11] = "Real Madrid have drawn up a five-star hitlist including Kane and Alli for summer spree... but have they got a chance of luring each of these stars?"
+news[12] = "West Brom coach banished from training ground as a condition of Megson taking over from Pulis"
+news[13] = "Wantaway Arsenal star Ozil demands Barcelona offer him £330,000-a-week deal to make January switch"
+news[14] = "Wenger identifies former Arsenal left-back Van Bronckhorst as the man to eventually replace him as manager"
+news[15] = "Money Man Neymar... well, he did cost £198m! PSG star wears Floyd Mayweather jacket after inspiring Celtic thrashing"
+news[16] = "'Can\'t wait for my next move': Evra eyes swift return as he works on fitness in wake of sacking by Marseille"
+news[17] = "Carvajal faces ban for deliberately getting booked in Champions League"
+news[18] = "Tottenham's new 61,500-capacity stadium continues to take shape as club release latest pictures of their London home"
+news[19] = "Griezmann open to Manchester United move... but reveals the WEATHER may stop his switch to England" 
+
+snippet[0] = "The Carabao Cup has been struck by yet more embarrassment after this afternoon's quarter-final draw was delayed for almost two hours by a 'minor technical glitch'. With non-footballers Matt Dawson and Phil Tufnell ready to draw the balls at Twitter's headquarters, viewers were left fuming when it was announced that the draw - due to take place at 4pm - had been moved back to 5pm, before then being delayed further until close to 6pm. It is not the first time the Carabao Cup draw has delivered farce this season."
+snippet[1] = "Arsenal manager Arsene Wenger has said the achilles tendon injury suffered by Santi Cazorla is 'the worst injury I have known'. The Spanish star almost lost his foot to gangrene after contracting a dangerous infection during his recovery from a serious injury that has resulted in him losing eight centimetres of tendon from his right ankle. The 32-year-old has not played for Arsenal since October last year and Wenger described the midfielder's ordeal as 'horrific'." 
+snippet[2] = "Ian Wright has admitted he went into a 'dark place' at Crystal Palace after opening up about being bullied at the start of his professional career while at Selhurst Park." 
+snippet[3] = "Lee Kendall has resigned from his position as goalkeeping coach of the England Women's team following the claim from Eni Aluko that he repeatedly spoke to her in a mock Caribbean accent."
+snippet[4] = "Atletico's season could be as good as over before Diego Costa has kicked a ball if they lose to Real Madrid this Saturday. They are relying on Griezmann to make sure that is not the case."
+snippet[5] = "EXCLUSIVE: Gareth Southgate has a masterplan for next summer\'s World Cup that will move Eric Dier to the centre of a ball-playing back three, Hunter understands."
+snippet[6] = "Peru became the 32nd and final nation to qualify for next summer's World Cup as they overcame New Zealand in the second leg of their playoff. Jefferson Farfan and Christian Ramos fired Peru to a deserved 2-0 victory in Lima, four days after the sides had played out a goalless draw in Wellington. Peru were much the better side and deservedly booked their place at the World Cup finals for a fifth time - their first appearance since 1982."
+snippet[7] = "CHARLES SALE - SPORTS AGENDA: BBC football presenter Gary Lineker has been a ferocious critic of FIFA, but he is still set to play a role in their World Cup draw in Moscow."
+snippet[8] = "Barcelona have already agreed a new contract with Lionel Messi until 2021 and have now begun work on tying the superstar down to a lifetime deal, according to reports in Spain."
+snippet[9] = "Pep Guardiola is open to extending his stay at Manchester City beyond 2019. The Spaniard's current deal is set to expire at the end of next season, but he is believed to be willing to negotiate."
+snippet[10] = "Liverpool stars past and present arrived at the Foundation for Art and Creative Technology (FACT) on Merseyside for the grand premiere of the new Kenny Dalglish biopic 'Kenny.' The King himself was in attendance as an array of big names flocked for the occasion, to celebrate and look back over the career of a living Liverpool legend via the medium of film. Ahead of its release across UK cinemas on Friday, the maiden screening of the film was shown to invited guests with current Reds captain Jordan Henderson among the first to arrive."
+snippet[11] = "After three years of relative inactivity in the transfer market, Real Madrid are ready to go Galatico shopping again next summer. Toni Kroos, James Rodriguez and Keylor Navas arrived together in 2014 and speculation that Florentino Perez has a five-man hit-list for next summer suggest Spurs pair Harry Kane and Dele Alli, Juventus forward Paulo Dybala, Athletic keeper Kepa Arrizabalaga and Paris Saint Germain defender Marquinhos are all on their way."
+snippet[12] = "West Brom coach Ben Garner has been told to stay away from the club' s training ground as a condition of Gary Megson taking charge of first-team affairs, following Tony Pulis' sacking." 
+snippet[13] = "Ozil has told Barca he will only sign for them if his wage demands can be met. According to Spanish outlet AS, he would earn €19million per year and will also ask for a huge signing-on bonus."
+snippet[14] = "Arsenal manager Arsene Wenger has earmarked one of his former players to succeed him at the Emirates when he finally leaves his post as manager, according to reports."
+snippet[15] = "PSG star Neymar is not the retiring type and the Brazilian once again showed his willingness to stand out from the crowd on Wednesday night. Following his side's latest demolition job against Celtic in the Champions League, Neymar left the stadium wearing a black and gold 'Floyd Mayweather' jacket. One would hope the jacket would have stayed in his bag if he hadn't scored two goals on the night."
+snippet[16] = "Former Manchester United defender Patrice Evra hinted that he was ready to make a swift return to the game on Wednesday night. The 36-year-old, who was sacked by Marseille after kicking a fan in the head during an altercation before an Europa League tie, shared a video of him keeping fit with the help of a running machine. He also wrote on Instagram: 'Enjoying my evening just chilling, can’t wait for my next move. I just feel blessed. I love this game.'"
+snippet[17] = "Real Madrid defender Dani Carvajal has been charged by UEFA for getting booked on purpose during their 6-0 win at Apoel Nicosia in Champions League Group H on Tuesday."
+snippet[18] = "Work on Tottenham's new stadium continues apace as the latest pictures of their new home have emerged. Construction on their new 61,559-capacity stadium, which is being built adjacent to the club's old White Hart Lane ground, continues as the stadium starts to take shape. They have been playing their home matches this season at Wembley stadium while construction takes place, and have not lost at their temporary home in the Premier League since the 2-1 defeat against Chelsea."
+snippet[19] = "Antoine Griezmann admits he is open to a move to Manchester United but reveals one thing which may get in the way. It appears the star is concerned about the infamous weather."
+while(a==b||a==c||a==d||a==e||b==c||b==d||b==e||c==d||c==e||d==e){
+var a = parseInt(20*Math.random()+1)
+var b = parseInt(20*Math.random()+1)
+var c = parseInt(20*Math.random()+1)
+var d = parseInt(20*Math.random()+1)
+var e = parseInt(20*Math.random()+1)
+}/*
+a = String(a);
+b = String(b);
+c = String(c);
+d = String(d);
+e = String(e);*/
+//document.writeln("<center><p style = 'font-size: 20px;text-align:center;'>"+a+' '+b+' '+c+' '+d+' '+e+"</p>")
+document.writeln("<center><table style = 'width: 75%;'> <tr><td class = 'news'>")
+document.writeln("<h2 style = 'text-align:center;'>"+news[a-1]+"</h2>")
+document.writeln("<hr style='color: #67c239;'/>")
+document.writeln("<img style = 'max-width:75%;max-height:300px;' src = 'News/"+parseInt(a)+".jpg' alt = 'Not Yet'>")
+document.writeln("<hr style='color: #67c239;'/>")
+document.writeln("<p style = 'font-size: 20px;text-align:center;'>"+snippet[a-1]+"</p>")
+document.writeln("</td></tr><tr><td class = 'news'>")
+document.writeln("<h2 style = 'text-align:center;'>"+news[b-1]+"</h2>")
+document.writeln("<hr style='color: #67c239;'/>")
+document.writeln("<img style = 'max-width:75%;max-height:300px;' src = 'News/"+parseInt(b)+".jpg' alt = 'Not Yet'>")
+document.writeln("<hr style='color: #67c239;'/>")
+document.writeln("<p style = 'font-size: 20px;text-align:center;'>"+snippet[b-1]+"</p>")
+document.writeln("</td></tr><tr><td class = 'news'>")
+document.writeln("<h2 style = 'text-align:center;'>"+news[c-1]+"</h2>")
+document.writeln("<hr style='color: #67c239;'/>")
+document.writeln("<img style = 'max-width:75%;max-height:300px;' src = 'News/"+parseInt(c)+".jpg' alt = 'Not Yet'>")
+document.writeln("<hr style='color: #67c239;'/>")
+document.writeln("<p style = 'font-size: 20px;text-align:center;'>"+snippet[c-1]+"</p>")
+document.writeln("</td></tr><tr><td class = 'news'>")
+document.writeln("<h2 style = 'text-align:center;'>"+news[d-1]+"</h2>")
+document.writeln("<hr style='color: #67c239;'/>")
+document.writeln("<img style = 'max-width:75%;max-height:300px;' src = 'News/"+parseInt(d)+".jpg' alt = 'Not Yet'>")
+document.writeln("<hr style='color: #67c239;'/>")
+document.writeln("<p style = 'font-size: 20px;text-align:center;'>"+snippet[d-1]+"</p>")
+document.writeln("</td></tr><tr><td class = 'news'>")
+document.writeln("<h2 style = 'text-align:center;'>"+news[e-1]+"</h2>")
+document.writeln("<hr style='color: #67c239;'/>")
+document.writeln("<img style = 'max-width:75%;max-height:300px;' src = 'News/"+parseInt(e)+".jpg' alt = 'Not Yet'>")
+document.writeln("<hr style='color: #67c239;'/>")
+document.writeln("<p style = 'font-size: 20px;text-align:center;'>"+snippet[e-1]+"</p>")
+document.writeln("</td></tr></table></center>")
+</script>
+<!--</div>
+<script type="text/javascript">
+var n = document.getElementById("news")
+var h = parseInt(n.style.height)
+document.writeln('<img src="Pogba1.jpg" id = "left" style="width: 20%;height: ' +n+ 'px;left: 0;display: flex;" align="left" />')
+document.writeln('<img src="1.jpg" id = "right" style="width: 20%;height: '+n+'px;right: 0;display: flex;" align="right" />')
+</script>-->
+</div>
+<hr style="color: #600080;"/>
+<p style="color: #600080;font-size: 20px;text-align: center;"> © Hunter Pvt Ltd.</p>
+</body>
+</html>

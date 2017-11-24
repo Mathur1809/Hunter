@@ -1,0 +1,536 @@
+<!DOCType HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+td{text-align:center;}
+img.head{max-width:200px;max-height: 250px;}
+td.head{font-family:Times;font-style:oblique;}
+td.nav{border-style: none; border-color: #FFFFFF;width: 20%;color: #ffffff}
+a:hover {color: #67c239;text-decoration: none;}
+a:link {color: #600080;text-decoration: none;}
+a:visited {text-decoration: none;}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  max-height: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #101010;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.results{
+	padding: 2.5%;
+	position: absolute;
+	left: 1%;
+	width: 45%;
+	background-image: url('Backgrounds/1.png');
+}
+
+.fixtures{
+	padding: 2.5%;
+	position: relative;
+	left: 54%;
+	width: 45%;
+	background-image: url('Backgrounds/1.png');
+}
+
+td.rleft{
+	width: 30%;
+	text-align: right;
+	height: 30px;
+	color: #600080;
+}
+
+td.rlmid, td.rrmid{
+	width: 10%;
+	text-align: center;
+	height: 30px;
+}
+
+td.rmid{
+	background-color: #600080;
+	color: #67c239;
+	width: 20%;
+	text-align: center;
+	height: 30px;
+}
+
+td.rright{
+	width: 30%;
+	text-align: left;
+	height: 30px;
+	color: #600080;
+}
+
+#resultin, #fixturein{
+	background-color: #67c239;
+}
+
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left: 30%;
+    z-index:1;
+}
+</style>
+<title> The Prem </title>
+<!--<p> Welcome to Hunter.com, your one stop shop for all your footballing needs. </p>-->
+</head>
+<body style = "color:black;font-family:Arial;background-image:url('Backgrounds/2.jpg');background-size:100%;">
+<table style = "width: 100%;" cellspacing="0" cellpadding="0" id = 'a'>
+<tr>
+<td align = "center" class = "head" style="background-color: #600080;"><img src = "HLogo.png" style = "max-height: 200px;max-width: 200px"></td>
+<td style = "background-color: #67c239;"><img src = "overlap.png" class = "head" align = "left"></td>
+<td class = "head" style = "color: #600080;background-color: #67c239;"><h1 align = "center" style = "font-size:100px;vertical-align: center;text-shadow: 2px 2px 30px;"> Hunter </h1></td>
+</tr>
+</table>
+<hr color = "#600080"/>
+<div style = "font-size:40px;">
+<table style = "width:100%;background-color: #67c239;" cellspacing="0" cellpadding="0">
+<tr>
+<td class = "nav">
+<a href = "news.html"> News </a>
+</td>
+<td class = "nav">
+<a href = "Table.html"> Table </a>
+</td>
+<!--<td class = "nav">
+<a href = "LatestPics.html"> Latest Pictures </a>
+</td>-->
+<td class = "nav">
+<a href = "AlternateYourClub.html"> Your Club </a>
+</td>
+<td class = "nav">
+<a href = "Fantasy.html"> Fantasy </a>
+</td>
+<td class = "nav">
+<a href = "Contact.html"> Contact Us </a>
+</td>
+</tr>
+</table>
+</div>
+<hr color = "#600080"/>
+<!--<p style = "font-size:30px;" align = "center"> Hunter gives you the latest scores, news and all the latest updates on the Premier League. </p>-->
+<center><p style = "font-size: 40px;color: #600080; text-align: center; background-color: #67c239; width: 50%;"> Pictures from Match Day 12 </p></center>
+
+<!--Slideshow code start-->
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 10</div>
+    <img src="Pics/ARSTOT.jpg" style="width:100%;max-height:500px">
+    <div class="text">Mustafi celebrates after scoring for Arsenal</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 10</div>
+    <img src="Pics/LIVSOU.jpg" style="width:100%;max-height:500px">
+    <div class="text">Coutinho goes for goal from distance</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 10</div>
+    <img src="Pics/CRYEVE.jpg" style="width:100%;max-height:500px">
+    <div class="text">Loftus-Cheek and Baines vie for the ball</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 10</div>
+    <img src="Pics/LEIMCI.jpg" style="width:100%;max-height:500px">
+    <div class="text">City celebrate after scoring against Leicester</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 10</div>
+    <img src="Pics/WBACHE.jpg" style="width:100%;max-height:500px">
+    <div class="text">Hazard celebrates with Fabregas after scoring</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 10</div>
+    <img src="Pics/BOUHUD.jpg" style="width:100%;max-height:500px">
+    <div class="text">Callum Wilson celebrates after scoring a hattrick again Huddersfield</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 10</div>
+    <img src="Pics/BURSWA.jpg" style="width:100%;max-height:500px">
+    <div class="text">Ashley Barnes celebrates his goal against Swansea</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 10</div>
+    <img src="Pics/MUNNEW.jpg" style="width:100%;max-height:500px">
+    <div class="text">Pogba on the ball for United</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 10</div>
+    <img src="Pics/WATWHU.jpg" style="width:100%;max-height:500px">
+    <div class="text">Ake disposses Carroll to set up Watford's first goal</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 10</div>
+    <img src="Pics/BHASTK.jpg" style="width:100%;max-height:500px">
+    <div class="text">Glenn Murray and Erik Pieters vie for the ball</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+</div>
+<!--Slideshow code ends-->
+<hr color = "#600080"/>
+<!--Videos-->
+<h2 align="center" style="color: #600080"> Latest Video:</h2>
+<div class="container">
+<center>
+    <video id="video" width="640" height="360" controls onload="autoplay()" id = "videocontainer">
+        <source id = "Mou" src="Videos/Mourinho.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+        <p style="color: white;text-align: center;">Mourinho talks about Basel defeat</p>
+    </div>
+   </center>
+</div>
+<hr color = "#600080"/>
+<!--Results and Fixtures-->
+<div id="results" class = "results">
+<!--<table style="width: 100%;">
+		<tr>
+			<th style="border: solid;" id = "res">Results</th>
+			<th style="border: solid;" id = "fix">Fixtures</th>
+		</tr>
+	</table>-->
+	<h2 style="color: #600080;text-align: center;"> Results </h2>
+	<div id = "resultin" class = "resultin">
+		<table style="width: 100%">
+			<tr>
+				<td class = "rleft">Arsenal</td>
+				<td class="rlmid"><img src="Clubs/ARS.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">2-0</td>
+				<td class="rrmid"><img src="Clubs/TOT.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Spurs</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Liverpool</td>
+				<td class="rlmid"><img src="Clubs/LIV.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">3-0</td>
+				<td class="rlmid"><img src="Clubs/SOU.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Southampton</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Crystal Palace</td>
+				<td class="rlmid"><img src="Clubs/CRY.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">2-2</td>
+				<td class="rlmid"><img src="Clubs/EVE.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Everton</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Leicester</td>
+				<td class="rlmid"><img src="Clubs/LEI.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">0-2</td>
+				<td class="rlmid"><img src="Clubs/MCI.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Man City</td>
+			</tr>
+			<tr>
+				<td class = "rleft">West Brom</td>
+				<td class="rlmid"><img src="Clubs/WBA.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">0-4</td>
+				<td class="rlmid"><img src="Clubs/CHE.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Chelsea</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Bournemouth</td>
+				<td class="rlmid"><img src="Clubs/BOU.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">4-0</td>
+				<td class="rlmid"><img src="Clubs/HUD.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Huddersfield</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Burnley</td>
+				<td class="rlmid"><img src="Clubs/BUR.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">2-0</td>
+				<td class="rlmid"><img src="Clubs/SWA.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Swansea</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Man Utd</td>
+				<td class="rlmid"><img src="Clubs/MUN.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">4-1</td>
+				<td class="rlmid"><img src="Clubs/NEW.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Newcastle</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Watford</td>
+				<td class="rlmid"><img src="Clubs/WAT.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">2-0</td>
+				<td class="rlmid"><img src="Clubs/WHU.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">West Ham</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Brighton</td>
+				<td class="rlmid"><img src="Clubs/BHA.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">2-2</td>
+				<td class="rlmid"><img src="Clubs/STK.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Stoke</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<!-- Fixtures -->
+<div id="fixtures" class = "fixtures">
+<!--<table style="width: 100%;">
+		<tr>
+			<th style="border: solid;" id = "res">Results</th>
+			<th style="border: solid;" id = "fix">Fixtures</th>
+		</tr>
+	</table>-->
+	<h2 style="color: #600080;text-align: center;"> Fixtures </h2>
+	<div id = "fixturein" class = "fixturein">
+		<table style="width: 100%">
+			<tr>
+				<td class = "rleft">West Ham</td>
+				<td class="rlmid"><img src="Clubs/WHU.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">vs</td>
+				<td class="rrmid"><img src="Clubs/LEI.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Leicester</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Crystal Palace</td>
+				<td class="rlmid"><img src="Clubs/CRY.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">vs</td>
+				<td class="rlmid"><img src="Clubs/STK.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Stoke</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Man Utd</td>
+				<td class="rlmid"><img src="Clubs/MUN.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">vs</td>
+				<td class="rlmid"><img src="Clubs/BHA.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Brighton</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Newcastle</td>
+				<td class="rlmid"><img src="Clubs/NEW.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">vs</td>
+				<td class="rlmid"><img src="Clubs/WAT.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Watford</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Swansea</td>
+				<td class="rlmid"><img src="Clubs/SWA.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">vs</td>
+				<td class="rlmid"><img src="Clubs/BOU.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Bournemouth</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Spurs</td>
+				<td class="rlmid"><img src="Clubs/TOT.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">vs</td>
+				<td class="rlmid"><img src="Clubs/WBA.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">West Brom</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Liverpool</td>
+				<td class="rlmid"><img src="Clubs/LIV.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">vs</td>
+				<td class="rlmid"><img src="Clubs/CHE.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Chelsea</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Southampton</td>
+				<td class="rlmid"><img src="Clubs/SOU.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">vs</td>
+				<td class="rlmid"><img src="Clubs/EVE.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Everton</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Burnley</td>
+				<td class="rlmid"><img src="Clubs/BUR.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">vs</td>
+				<td class="rlmid"><img src="Clubs/ARS.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Arsenal</td>
+			</tr>
+			<tr>
+				<td class = "rleft">Huddersfield</td>
+				<td class="rlmid"><img src="Clubs/HUD.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rmid">vs</td>
+				<td class="rlmid"><img src="Clubs/MCI.png" style="max-width: 50%; max-height: 30px;"></td>
+				<td class = "rright">Man City</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<br>
+<hr style="color: #600080;"/>
+<p style="color: #600080;font-size: 20px;text-align: center;"> © Hunter Pvt Ltd.</p>
+
+<script type="text/javascript">
+	var tdarr = document.querySelectorAll('.nav');
+	for(var i=0;i<tdarr.length;i++)
+	{
+		tdarr[i].onmouseover = bottomglow;
+		tdarr[i].onmouseout = bottomout;
+	}
+	function bottomglow()
+	{
+		this.style.borderLeft = '10px solid #600080';
+		this.style.borderRight = '10px solid #600080';
+		this.style.backgroundColor = '#a000c0';
+	}
+	function bottomout()
+	{
+		this.style.border = 'none';
+		this.style.backgroundColor = '#67c239';
+	}
+
+	//Slideshow code start
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1} 
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none"; 
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block"; 
+	  dots[slideIndex-1].className += " active";
+	}
+	//Slideshow code end
+
+	/*function autoplay(){
+	var vid = document.getElementById("videocontainer");
+	var vidarray = ['Videos/Mourinho.mp4','Videos/Klopp.mp4','Videos/Poyet.mp4''Videos/Pulis.mp4''Videos/Wenger.mp4'];
+	var src = document.createElement('source');
+	var rnd = parseInt(Math.random()*5);
+	src.setAttribute('src', vidarray[i]);
+	src.setAttribute('type', 'text/mp4');
+	document.println(src);
+	vid.appendChild(src);
+	vid.load();
+	vid.play();
+	}*/
+</script>
+</body>
+</html>

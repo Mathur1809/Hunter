@@ -1,0 +1,70 @@
+<!DOCtype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<style type="text/css">
+		img.head{max-width:200px;max-height: 250px;}
+		td.head{font-family:Times;font-style:oblique;}
+		p{font-size: 30px; color: #b59146; text-align: center;text-shadow: 5px 5px 10px #000000;-webkit-text-stroke: 1px #b59146; -webkit-text-fill-color: #FFFFFF;}
+		label{font-size: 40px; font-weight: bold; color: #b59146;-webkit-text-stroke: 2px #FFFFFF; -webkit-text-fill-color: #b59146;background-color: #b59146}
+		input{width: 100%; height: 40px; font-size: 30px; color: #b59146;}
+	</style>
+	<title>
+		Hunter Fantasy League
+	</title>
+</head>
+<body style="background-image: url('Backgrounds/Fantasy.jpg');background-repeat: no-repeat;background-size: cover;">
+	<table style = "width: 100%;" cellspacing="0" cellpadding="0" id = 'a'>
+	<tr>
+	<td align = "center" class = "head" style="background-color: #000000;"><img src = "Fantasy/GoldShield.png" style = "max-height: 200px;max-width: 200px;"></td>
+	<td style = "background-color: #b59146;"><img src = "overlapgold.png" class = "head" align = "left"></td>
+	<td class = "head" style = "color: #000000;background-color: #b59146;"><h1 align = "center" style = "font-size:80px;vertical-align: center;text-shadow: 2px 2px 30px"> The Hunter Fantasy League </h1></td>
+	</tr>
+	</table>
+	<hr/>
+	<p> The Hunter Fantasy League will be up and running shortly. Please leave your details below to make sure that you get notified as soon as this feature is active on the Hunter website. </p>
+	<form action="storesql.php" method="post">
+		<table align="center" style="width: 50%;padding: 5px;">
+			<tr>
+				<td style="text-align: right;">
+					<label>Email ID:*</label>	
+				</td>
+				<td style="text-align: center;">
+					<input type="Email" name="email" placeholder="abc@example.com">
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right;">
+					<label>First Name:*</label>
+				</td>
+				<td style="text-align: center;">
+					<input type="text" name="fname">
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right;">	
+					<label>Last Name:*</label>
+				</td>
+				<td style="text-align: center;">
+					<input type="text" name="lname">
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: right;">
+					<label>Phone No.: &nbsp</label>
+				</td>
+				<td style="text-align: center;">
+					<input type="text" name="phone">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="submit" style="width: 50%; height: 35px; font-size: 25px;" value="Register">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<hr style="color: #b59146;"/>
+	<p style="color: #b59146;font-size: 20px;text-align: center;"> © Hunter Pvt Ltd.</p>
+</body>
+</html>

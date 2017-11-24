@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1><b>Manchester United Season Review 2017/18 : </b></h1>
+<p>Will United be Premier League title contenders?</p>
+<img src="city.jpg" height="400" width="600">
+<h2> 2016/17 Season Recap </h2>
+<p>Manchester United's season will be defined by what happens in the Europa League final. Win, and it is a double-winning campaign in which they assured Champions League qualification. Lose, and the sixth-placed Premier League finish becomes far more difficult to defend.
+
+Jose Mourinho talked about winning the title at his unveiling in the summer, but his team never managed to find lasting consistency in the Premier League despite the expensive additions of Paul Pogba, Zlatan Ibrahimovic and Henrikh Mkhitaryan.
+
+Their inability to kill off lesser rivals became a persistent source of frustration for Mourinho, and there was also plenty of debate about his tactics in big games. Winning the Europa League would ensure a happy ending, but another sixth-placed finish next season is unlikely to be tolerated.
+
+</p>
+
+<hr>
+
+<h2>Most important player: David De Gea </h2>
+
+<p>Manchester United sit comfortably at the top of the Premier League table, joint with their neighbours Manchester City, who have an identical record. No-one has scored more goals than the Red Devils -and the Citizens-, but it’s at the opposite end of the pitch where their best player can be found.
+
+Jose Mourinho has instilled a newfound ruthlessness into his side, winning three out of five league games by a 4-0 margin, with Romelu Lukaku taking to the number nine shirt like a fish to water and Paul Pogba finally exerting his long-awaited influence on games and contributing both goals and assists.
+
+Even defensively you’d pinpoint the under the radar tackles and interceptions of middle third patroller Nemanja Matic before you’d consider David de Gea as one of their most important players.
+
+But that’s exactly what he is.</p>
+<img src="kdb.jpg" height="400" width="600">
+<p>Top-of-the-table Manchester City are playing to a tune conducted by De Bruyne and have found themselves top of the table as a result,with the Belgian proving unequivocally that he is the best player in the Premier League
+ right now.During, the last eight weeks he has really established himself as player of the season.
+
+<h2>Biggest Weakness</h2>
+
+<p>It's the inability to finish chances, game management and a lack of tactical variety, Man Utd has had so many draws this season at home and the number one reason is an absolute inability to finish chances, it's crazy the amount of chances that zlatan, Pogba, etc have missed, in addition to this the team does not know how to close games off, how to protect a narrow lead, the late draws at Old Trafford are a proof of this. Plus, today's man utd don't have the tactical variety of the old teams.
+<img src="stones-kompany.png" height="400" width="600">
+
+<h2> Best XI </h2>
+<h3>3-5-2 </h3>
+<img src="best11city.png" height="500" width="500">
+
+<h2>Hunter's Prediction </h2>
+<p>Manchester United’s young squad are a force to be reckoned with, having strengthened in all their vulnerable areas for the new season. Their strong spine is key to their success as they aim to free up their direct runners down the flanks and the big man Lukaku down the middle. If Manchester United’s young 11 can click and gain momentum with a perfect streak in their first five games, it will be extremely difficult to stop the pace and power the side possesses. Prediction, runners-up in the Premier League, Uefa Champions League quarter-finalists and FA Cup winners.</p>
+
+<h3> Predicted finish : 2nd </h3>
+
+</body>
+</html>
